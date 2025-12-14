@@ -1,11 +1,9 @@
-// frontend/src/routes/RaceDetail.tsx
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
 const RaceDetail: React.FC = () => {
   const { raceId } = useParams<{ raceId: string }>();
 
-  // ข้อมูลของแต่ละรุ่น
   const raceData: Record<string, any> = {
     'race12': {
       title: 'Race 12 ValenciaGP',
@@ -29,7 +27,6 @@ const RaceDetail: React.FC = () => {
       },
       highlightVideo: 'https://youtu.be/L72SDn7XZcI?si=zGCGuHsK6luniIsd',
     },
-    // เพิ่มข้อมูล race11, race10 ... ตามต้องการ
   };
 
   const race = raceData[raceId!] || {
@@ -43,7 +40,6 @@ const RaceDetail: React.FC = () => {
     highlightVideo: '',
   };
 
-  // แปลง YouTube URL เป็น Embed URL
   const embedUrl = race.highlightVideo
     ? race.highlightVideo.replace(
         /https:\/\/youtu\.be\/([a-zA-Z0-9_-]+).*/,

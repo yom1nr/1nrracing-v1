@@ -1,6 +1,7 @@
 // frontend/src/App.tsx
 import React, { useState, useEffect } from 'react';
 import { Routes, Route, Link, useNavigate } from 'react-router-dom';
+import './styles';
 import Home from './routes/Home';
 import Login from './routes/Login';
 import Race from './routes/Race';

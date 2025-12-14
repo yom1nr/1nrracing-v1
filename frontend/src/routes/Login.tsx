@@ -12,7 +12,7 @@ const Login: React.FC<Props> = ({ onAuthed }) => {
   const [name, setName] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const navigate = useNavigate(); // <-- เพิ่ม navigate
+  const navigate = useNavigate(); 
 
   const submit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -22,7 +22,6 @@ const Login: React.FC<Props> = ({ onAuthed }) => {
       if (mode === 'login') {
         const res = await login(email, password);
 
-        // เก็บ token และ user info
         localStorage.setItem('token', res.token);
         localStorage.setItem('user', JSON.stringify(res.user));
 
@@ -36,7 +35,6 @@ const Login: React.FC<Props> = ({ onAuthed }) => {
         onAuthed(res.token);
       }
 
-      // redirect กลับหน้า Home หลังล็อคอิน/สมัครเสร็จ
       navigate('/');
 
     } catch (err: any) {

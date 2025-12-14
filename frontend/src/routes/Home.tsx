@@ -60,7 +60,7 @@ function Home() {
           </p>
           <p>
             <FaEnvelope />
-            Email: contact@1nrteam.com
+            Email: team1nrracing@gmail.com
           </p>
         </IconContext.Provider>
       </section>
