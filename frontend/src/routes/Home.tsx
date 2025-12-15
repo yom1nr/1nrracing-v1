@@ -30,16 +30,20 @@ function Home() {
             <p>All the action from the weekend.</p>
           </article>
         </Link>
+          <Link to="/update" style={{ textDecoration: 'none', color: 'inherit' }}>
         <article className="card">
-          <img src="/assets/team1.jpg" alt="Race Team Update" className="card-img" />
-          <h3>Team Update</h3>
-          <p>Season 2021 Result.</p>
+            <img src="/assets/team1.jpg" alt="Race Team Update" className="card-img" />
+            <h3>Team Update</h3>
+            <p>Season 2021 Result.</p>
         </article>
+          </Link>
+          <Link to="/tech" style={{ textDecoration: 'none', color: 'inherit' }}>
         <article className="card">
           <img src="/assets/tech.jpg" alt="Tech Talk" className="card-img" />
           <h3>Tech Talk</h3>
           <p>Bike upgrades explained.</p>
         </article>
+          </Link>
       </section>
 
       {/* Contact */}

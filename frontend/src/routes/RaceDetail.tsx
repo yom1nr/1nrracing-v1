@@ -27,6 +27,29 @@ const RaceDetail: React.FC = () => {
       },
       highlightVideo: 'https://youtu.be/L72SDn7XZcI?si=zGCGuHsK6luniIsd',
     },
+    // เพิ่มข้อมูล raceอื่นๆ ตามต้องการ
+    'race11': {
+      title: 'Race 11 MalaysianGP',
+      date: '24 October 2021',
+      circuit: 'Sepang International Circuit',
+      attendance: '',
+      motogp: {
+        winner: 'Non1nr ',
+        description: 'Start from a front row Finish on Podium',
+        image: '/assets/motogp12nr.jpg',
+      },
+      moto2: {
+        winner: 'Yom1nr',
+        description: 'Yom1nr DNF the race due to technical issue',
+        image: '/assets/race12.jpg',
+      },
+      moto3: {
+        winner: 'Del1nr and Kim1nr',
+        description: 'Finish 1-2 on the podiums',
+        image: '/assets/moto312dr.jpg',
+      },
+      highlightVideo: 'https://www.youtube.com/live/XPjYoUHulhg?si=4y68PBiyjGeB91_Q',
+    },
   };
 
   const race = raceData[raceId!] || {

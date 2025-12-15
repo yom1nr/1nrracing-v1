@@ -9,6 +9,7 @@ const Race: React.FC = () => {
     { id: 'race11', title: 'Race 11 MalaysianGP', desc: 'Grand Prix of Malaysia', img: '/assets/race11.jpg' },
     { id: 'race10', title: 'Race 10 ArgentinaGP', desc: 'Grand Prix of Argentina', img: '/assets/race10.jpg' },
     { id: 'race9', title: 'Race 9 AragonGP', desc: 'GRAN PREMIO DE ARAGÓN', img: '/assets/race9.jpg' },
+    { id: 'race8', title: 'Race 8 ThailandGP', desc: 'OR THAILAND GRAND PRIX', img: '/assets/race8.jpg' },
     { id: 'race7', title: 'Race 7 San MarinoGP', desc: 'Gran Premio Octo di San Marino e della Riviera di Rimini', img: '/assets/race7.jpg' },
     { id: 'race6', title: 'Race 6 Red bull Ring', desc: 'Grand Prix of Spielberg', img: '/assets/race6.jpg' },
     { id: 'race5', title: 'Race 5 Algarve', desc: 'Grand Prix of Portugal', img: '/assets/race5.jpg' },
