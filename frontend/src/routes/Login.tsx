@@ -181,7 +181,6 @@ const Login: React.FC<Props> = ({ onAuthed }) => {
         </form>
         
         <p style={{marginTop: '20px', fontSize: '0.8rem', color: '#666', textAlign: 'center'}}>
-           *Demo Mode: เข้าสู่ระบบได้ทันทีโดยไม่ต้องใช้ Server
         </p>
       </div>
     </div>
