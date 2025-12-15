@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import './RaceDetail.css';
 
 const RaceDetail: React.FC = () => {
   const { raceId } = useParams<{ raceId: string }>();

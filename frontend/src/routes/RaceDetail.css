@@ -1,0 +1,177 @@
+/* frontend/src/routes/RaceDetail.css */
+.race-detail-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Back Button */
+.back-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    border: 1px solid #333;
+    color: #aaa;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 24px;
+    transition: all 0.2s;
+}
+
+.back-btn:hover {
+    border-color: var(--brand, #2E3AF7);
+    color: white;
+    background: rgba(46, 58, 247, 0.1);
+}
+
+/* Header */
+.race-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.race-header h1 {
+    font-size: 3rem;
+    margin-bottom: 12px;
+    font-family: 'Teko', sans-serif;
+    /* ใช้ฟอนต์หลัก */
+    letter-spacing: 2px;
+}
+
+.race-meta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    color: #888;
+    font-size: 1.1rem;
+}
+
+/* Grid Layout */
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin-bottom: 60px;
+}
+
+.category-card {
+    background: #13141a;
+    border: 1px solid #1e2030;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--brand, #2E3AF7);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    background: #0c0d13;
+    border-bottom: 1px solid #1e2030;
+}
+
+.card-header h3 {
+    margin: 0;
+    color: var(--brand, #2E3AF7);
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.trophy-icon {
+    color: gold;
+}
+
+.image-wrapper {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.category-card:hover .image-wrapper img {
+    transform: scale(1.05);
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h4 {
+    margin: 0 0 8px;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.card-content p {
+    margin: 0;
+    color: #aaa;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Video Section */
+.highlight-video {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 1px solid #222;
+}
+
+.highlight-video h2 {
+    font-family: 'Teko', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 24px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.not-found {
+    text-align: center;
+    padding: 100px 20px;
+}
